@@ -1,0 +1,16 @@
+In this part we will gather all of our definitions. The subsequent annotations are binding for the rest of the paper.
+\\
+Vehicles define all types of bodies used for transportation. Here, we restrict the vehicles to road-legal cars used on a daily basis. Such would include the bodywork types as Sedans, Hatchbacks, Sport-Utility-Vehicles (SUVs) and Sportscar.
+\\
+Electric Vehicles are vehicles with a full electric motor and drive, while Internal Combustion Engines vehicles contain, as the name suggests, a combustion engine. The ICEs that interest us are: Gasoline and Diesel fueled vehicles, but also hybrid cars. Hybrid cars have both, an electric as a conventional motor, hence they are classified to the second category.
+\\
+The dataset contains all of the engine types as above. It follows the American nomenclature, for which 'Gas' engine type does not mean liquid petroleum gas (LPG, also known as propane autogas), but gasoline.
+\\ %https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://library.fiveable.me/ap-physics-1/unit-1/position-velocity-acceleration/study-guide/IBVTsxJJfVMRcYxhC5Nk&ved=2ahUKEwjBlYT175qLAxUuRmwGHbUeDA8QFnoECBYQAw&usg=AOvVaw2BrE2sdzmIML2Rzx2yt56s
+The position $x$ describes the location of a body throughout it's movement. Speed $s$ and velocity $v$ might seem as the same thing, but they are different from the physics perspective. Speed describes the time rate at which objects move along a path. Velocity relate to the rate and direction of the movement. Acceleration express the rate and direction changes of the velocity. The relation can be visualized as:
+\begin{align*}
+    \vec{v} & = v_x\vec{e_x} + v_y\vec{e_y} + v_z\vec{e_z} \\
+    s & = \lvert\vec{v}\rvert = \sqrt{v_x^2 + v_y^2 + v_z^2} \\
+    \frac{d\vec{x}(t)}{dt} & = v(t) = \dot{\vec{x}}(t) \\
+    \frac{d^2\vec{x}(t)}{dt^2} & = \frac{dv}{dt}= \ddot{\vec{x}}(t) 
+\end{align*}
+Vehicles Powertrain, assembly of components pushing the vehicle forward, are divided into All-Wheel Drive (AWD) Two-Wheel Drive (TWD) vehicles. TWDs consist out of Rear-Wheel-Drive (RWD) and Front-Wheel Drive (FWD). The role of the Powertrain will be discussed in section \ref{sec: Pow} and the role of the Drive and their forces in \ref{sec: The_mod}.

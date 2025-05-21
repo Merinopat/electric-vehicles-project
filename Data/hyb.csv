@@ -1,0 +1,38 @@
+Vehicle,Engine,Body,Drive,M,2a,CoG,c_D,A_F,E_f,E_b
+Audi A8,plug-in hybrid,Sedan,all wheel drive,2419.91529395,3.12674,0.55,0.27,2.2,619.0,12
+Audi Q5,plug-in hybrid,SUV,all wheel drive,2125.0802534500003,2.8194,0.52,0.35,2.6,550.0,14
+Bentley Bentayga,plug-in hybrid,SUV,all wheel drive,2619.94952912,2.99466,0.52,0.35,2.6,712.0,14
+BMW 5 Series,plug-in hybrid,Sedan,rear wheel drive,1934.11786568,2.9743399999999998,0.55,0.27,2.2,435.0,12
+BMW 7 Series,plug-in hybrid,Sedan,all wheel drive,2199.01580976,3.21056,0.55,0.27,2.2,435.0,12
+BMW i3,plug-in hybrid,Hatchback,rear wheel drive,1485.96860412,2.57048,0.54,0.3,2.1,83.0,11
+BMW i8,plug-in hybrid,Coupe,all wheel drive,1588.0268873700002,2.79908,0.52,0.26,2.0,399.0,10
+BMW X3,plug-in hybrid,SUV,all wheel drive,2080.1746088200002,2.8651199999999997,0.52,0.35,2.6,475.0,14
+Ford Fusion Energi,plug-in hybrid,Sedan,front wheel drive,1808.0191868200002,2.8498799999999997,0.55,0.27,2.2,503.0,12
+Honda Clarity,plug-in hybrid,Sedan,front wheel drive,1837.9562832400002,2.7508199999999996,0.55,0.27,2.2,252.0,12
+Hyundai Ioniq Plug-In Hybrid,plug-in hybrid,Hatchback,front wheel drive,1549.92512829,2.70002,0.54,0.3,2.1,410.0,11
+Kia Optima Plug-In Hybrid,plug-in hybrid,Sedan,front wheel drive,1723.19741363,2.80416,0.55,0.27,2.2,521.0,12
+Land Rover Range Rover,plug-in hybrid,SUV,four wheel drive,2501.56192055,2.921,0.52,0.35,2.6,863.0,14
+Land Rover Range Rover Sport,plug-in hybrid,SUV,four wheel drive,2471.17123176,2.9235399999999996,0.52,0.35,2.6,867.0,14
+Lincoln Aviator,plug-in hybrid,SUV,all wheel drive,2575.49747686,3.02514,0.52,0.35,2.6,647.0,14
+Mercedes-Benz GLC-Class,plug-in hybrid,SUV,all wheel drive,2066.11324535,2.87274,0.52,0.35,2.6,626.0,14
+Mercedes-Benz S-Class,plug-in hybrid,Sedan,rear wheel drive,2320.12497255,3.16484,0.55,0.27,2.2,759.0,12
+Mitsubishi Outlander PHEV,plug-in hybrid,SUV,all wheel drive,1915.0669861400002,2.6695399999999996,0.52,0.35,2.6,406.0,14
+Polestar 1,plug-in hybrid,Coupe,all wheel drive,2345.0725529,2.74066,0.52,0.26,2.0,572.0,10
+Porsche Cayenne,plug-in hybrid,SUV,all wheel drive,2342.35099868,2.8956,0.52,0.35,2.6,712.0,14
+Porsche Cayenne Coupe,plug-in hybrid,SUV,all wheel drive,2388.16382805,2.8956,0.52,0.35,2.6,712.0,14
+Porsche Panamera,plug-in hybrid,Sedan,all wheel drive,2243.01426965,2.94894,0.55,0.27,2.2,759.0,12
+Subaru Crosstrek,plug-in hybrid,SUV,all wheel drive,1686.00283929,2.66446,0.52,0.35,2.6,475.0,14
+Toyota Prius Prime,plug-in hybrid,Hatchback,front wheel drive,1526.33832505,2.70002,0.54,0.3,2.1,410.0,11
+Volvo XC60,plug-in hybrid,SUV,all wheel drive,2103.76141206,2.8651199999999997,0.52,0.35,2.6,665.0,14
+Volvo XC90,plug-in hybrid,SUV,all wheel drive,2315.58904885,2.9844999999999997,0.52,0.35,2.6,665.0,14
+Chevrolet Volt,plug-in hybrid,Hatchback,front wheel drive,1596.1915500300001,2.69494,0.54,0.3,2.1,320.0,11
+Kia Niro Plug-In Hybrid,plug-in hybrid,SUV,front wheel drive,1433.80548157,2.70002,0.52,0.35,2.6,406.0,14
+MINI Countryman,plug-in hybrid,Wagon,all wheel drive,1790.7826767600002,2.6695399999999996,0.56,0.29,2.2,342.0,12
+Volvo S90,plug-in hybrid,Sedan,all wheel drive,2076.99946223,3.0606999999999998,0.55,0.27,2.2,572.0,12
+Audi A3 Sportback e-tron,plug-in hybrid,Hatchback,front wheel drive,1640.1900099200002,2.6289,0.54,0.3,2.1,381.0,11
+BMW 3 Series,plug-in hybrid,Sedan,rear wheel drive,1769.0102430000002,2.80924,0.55,0.27,2.2,388.0,12
+BMW X5,plug-in hybrid,SUV,all wheel drive,2367.7521714,2.9337,0.52,0.35,2.6,806.0,14
+Cadillac CT6,plug-in hybrid,Sedan,rear wheel drive,2057.94858269,3.10896,0.55,0.27,2.2,561.0,12
+Hyundai Sonata Plug-in Hybrid,plug-in hybrid,Sedan,front wheel drive,1717.7543051900002,2.80416,0.55,0.27,2.2,521.0,12
+Mercedes-Benz C-Class,plug-in hybrid,Sedan,rear wheel drive,1779.89645988,2.82956,0.55,0.27,2.2,475.0,12
+Mercedes-Benz GLE-Class,plug-in hybrid,SUV,all wheel drive,2474.79997072,2.91592,0.52,0.35,2.6,755.0,14

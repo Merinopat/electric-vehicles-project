@@ -1,0 +1,79 @@
+We use the data from CarAPI, \cite{CarAPI}. It contains respectable amount of data for conventional, electric and hybrid vehicles. 
+\subsubsection*{Vehicles Data}
+	We begin by dividing the dataset into four subgroups: electric, hybrid, gasoline, and diesel vehicles. For each subgroup, we assign the necessary columns relevant to the vehicle type. 
+
+	For conventional vehicles, the total range $R$ is commonly used as an indicator of the vehicle’s current energy state. However, we require the fuel energy capacity of each vehicle. This can be calculated by multiplying the fuel tank volume by the respective energy density of the fuel. Specifically, gasoline (used in both gasoline-powered and hybrid vehicles) has an energy density of 33.526 MJ/L, while diesel has an energy density of 38.290 MJ/L. These values are sourced from the Bureau of Transportation Statistics \cite{TranspStat}.
+	\begin{equation*}
+		\text{Fuel Energy}= \text{Tank Capacity} \times \text{Energy Density}
+	\end{equation*}
+	Before assigning vehicle names, we first allocate values for center of gravity height, hybrid battery capacity, drag coefficient and frontal area based on each vehicle’s body type. These reference values were provided by ChatGPT, s. \cite{ChatGPT}, and tailored to each vehicle's body style and hybrid category.  Using ChatGPT allowed us to distinguish more clearly between body types and provided a more reliable foundation than relying on arbitrary estimates. All units are converted to the SI system for consistency. Additionally, we include a column with the vehicle name, remove duplicate entries based on this name, rename and regroup the datasets.
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{c | c | c}
+					\hline
+					\hline
+			    Old Name & New Name & Symbol \\ 
+				    \hline 
+				    \hline
+    			'Body Curb Weight' & 'M' & $M$ \\ 
+	    			\hline
+			    'Body Wheel Base' & '2a' & $2a$ \\
+			    'Drag Coefficient' & 'c\_D' & $c_D$\\
+			    'Frontal Area' & 'A\_F' & $A_F$ \\
+			    'Height of Center & \multirow{2}{*}{'CoG'} & \multirow{2}{*}{$CoG$} \\
+	    		of Gravity' & & \\
+				    \hline
+		    	'Body Type' & 'Body' & $-$ \\
+	    		'Engine Type' & 'Engine' & $-$ \\
+   				'Engine Drive Type' & 'Drive' & $-$ \\
+	    			\hline
+		    	'Fuel Energy' & 'E\_F' & $E_f$\\
+		    	'Mileage Battery & \multirow{2}{*}{'E\_b'} & \multirow{2}{*}{$E_b$} \\
+	    		Capacity Electric' & \\
+    			\hline
+    			\hline
+			\end{tabular}
+		\end{center}
+		\caption{Parameter Renaming and Symbol Definitions for Vehicle Dataset}
+	\end{table}
+	The total vehicle mass is denoted as 'M', representing the sum of the masses of the front and rear tires and the bodywork. 
+	\begin{equation*}
+		M = m_a + m_b + m_c
+	\end{equation*}
+	The wheelbase is renamed to '2a', reflecting its definition as twice the distance a from the vehicle’s center to one axle, $a$. We then save each subgroup as a separate dataset. 
+	
+	This leaves us with 19 electric vehicles, 406 gasoline vehicles, 34 diesel vehicles, and 37 hybrid vehicles — all of which are plug-in hybrids.
+	
+\subsubsection*{Drive Cycles}
+	We load the WLTC and US06 drive cycles for further analysis. The WLTC (Worldwide harmonized Light vehicles Test Cycle) is designed to represent typical driving behavior across different regions globally, while the US06 cycle captures more aggressive driving patterns, including higher speeds and acceleration, and is used in U.S. emissions testing.
+	
+	The data is processed by converting all values to SI units, ensuring that each cycle ends with zero velocity and zero acceleration. The total distance covered is calculated using the relation:
+	\begin{align*}
+		\frac{ds}{dt} = v && \Rightarrow && s = \int v dt
+    \end{align*}
+	The visualizations of both cycles are shown below.
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=\linewidth]{images/WLTC.png}
+			\includegraphics[width=\linewidth]{images/US06.png}
+		\end{center}
+		\caption{Acceleration, Velocity and Distance Profiles}
+	\end{figure}
+	The images above show the WLTC and US06 Drive Cycles. As seen in the table below, WLTC reflects a calmer driving style compared to US06, with lower maximum velocity and acceleration, as well as a significantly lower average speed. 
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{l | c | c}
+					\hline\hline
+				Physical Variable			& WTLC & US06 \\
+					\hline\hline
+				Duration $T$ 		& 1022 s & 592 s\\
+				Max. Acceleration& 0.76 m/s$^2$& 3.76 m/s$^2$ \\
+				Max. Velocity	& 103.6 km/h& 129.24 km/h\\
+				Avg. Velocity 	& 45.82 km/h & 78.23 km/h\\
+				Distance $S$ 		& 13.021 km & 12.887 km \\
+				\hline\hline
+			\end{tabular}
+		\end{center}
+		\caption{Drive Cycles' Data}
+		\label{tab: drive_cycle}
+	\end{table}
