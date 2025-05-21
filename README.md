@@ -1,2 +1,5 @@
-This project compares the energy performance of Electric Vehicles (EVs), Internal Combustion Engine (ICE) vehicles, and Hybrids using Python Jupyter notebooks and drive cycle data.
-It simulates and analyzes how each vehicle type behaves under various driving conditions, modeling factors like battery state-of-charge, regenerative braking, and hybrid energy split.
+This project compares the energy performance of Electric Vehicles (EVs), Internal Combustion Engine (ICE) vehicles, and Hybrids drive cycle data.
+
+It was developed as part of the coursework for the EE4513 – Electric Vehicles and their Grid Integration module at the National University of Singapore (NUS).
+
+The project simulates how each vehicle type behaves under realistic driving conditions, modeling factors like battery state-of-charge (SOC), regenerative braking, and hybrid energy split, while providing visualization and comparison tools.
