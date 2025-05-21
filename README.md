@@ -4,5 +4,5 @@ It was developed as part of the coursework for the EE4513 – Electric Vehicles 
 
 The project simulates how each vehicle type behaves under realistic driving conditions, modeling factors like battery state-of-charge (SOC), regenerative braking, and hybrid energy split, while providing visualization and comparison tools.
 
-The code is dicided into two parts extraction (data.ipynb) and evaluation (workbook.ipynb).
-The project paper can be found in the paper folder.
+The code is dicided into two parts: extraction (Data_Extraction.ipynb) and evaluation (Workbook.ipynb).
+The project report can be found in the paper folder.
